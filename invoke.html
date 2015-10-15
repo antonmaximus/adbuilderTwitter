@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script>
+    function initScript(){
+    	debugger;
+    	console.log('mmmk');
+    }
+	// window.onload = function() {
+		// var datDiv = document.getElementById("myDiv");
+		// var script = document.createElement('script');
+		// 	script.onreadystatechange= function () {
+		// 	    if (this.readyState == 'complete') 
+		// 	        initScript();//the whole script is wrapped in this function
+		// 	}
+
+		// console.log(datDiv)
+		// console.log(initScript)
+
+
+		// script.onload= initScript;
+		// // datDiv.innerHTML = script;
+
+
+		// var head = document.getElementsByTagName("head")[0]
+		// head.appendChild(script);
+
+
+// function stripAndExecuteScript(text) {
+//     var scripts = '';
+//     var cleaned = text.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, function(){
+//         scripts += arguments[1] + '\n';
+//         return '';
+//     });
+
+//     if (window.execScript){
+//         window.execScript(scripts);
+//     } else {
+//         var head = document.getElementsByTagName('head')[0];
+//         var scriptElement = document.createElement('script');
+//         scriptElement.setAttribute('type', 'text/javascript');
+//         scriptElement.innerText = scripts;
+//         // head.appendChild(scriptElement);
+//         // head.removeChild(scriptElement);
+
+//         document.body.appendChild(scriptElement);
+//     }
+//     return cleaned;
+// };
+
+
+// var scriptString = '<scrip' + 't + type="text/javascript">alert(\'test\');</scr' + 'ipt><strong>test</strong>';
+// document.getElementById('element').innerHTML = stripAndExecuteScript(scriptString);
+	// };
+
+	window.onload = function() {
+		var script = document.createElement('script');
+		var payload = document.getElementById('element').innerHTML = 'alert("boobs!");';
+		script[(script.innerText===undefined?"textContent":"innerText")] = payload;
+		document.documentElement.appendChild(script);
+	}
+
+
+
+
+	</script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+    
+    <div id="element"></div>
+  </body>
+</html>
