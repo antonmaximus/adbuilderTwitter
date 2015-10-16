@@ -6,10 +6,8 @@ define({
                   placeholderImage: './assets/twitter_300x250.png',
                   width: 300,
                   height: 250,
-
-                  // Enter Div Name where Twitter Feed with be placed
-                  twitterScreenName: '@nike',
-                  twitterWidgetId: ''
+                  twitterScreenName: '@sizmek',
+                  twitterWidgetId: '654401993763627008'
 		}
     ]
 });
