@@ -60,7 +60,7 @@ define(['comp/graphicComp', 'utils/domUtils', 'utils/objectUtils'],
             // Inject Twitter Script
             var script = document.createElement('script');
             var payload = TWITTER_JS_TAG;
-            script.innerText = payload;
+            script.textContent = payload;
             document.documentElement.appendChild(script);
         }
 
