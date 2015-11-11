@@ -7,7 +7,7 @@ define({
                   width: 300,
                   height: 250,
                   twitterScreenName: '@sizmek',
-                  twitterWidgetId: '654401993763627008'
+                  twitterWidgetId: ''
 		}
     ]
 });
